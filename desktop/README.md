@@ -16,8 +16,7 @@ team workspaces, is a separate download at
 [clipy.online/download](https://clipy.online/download). The full app is also
 available on [iPhone and iPad](https://apps.apple.com/app/clipy-screen-recorder/id6836756677)
 and [Android](https://play.google.com/store/apps/details?id=online.clipy.android),
-or in the [web app](https://clipy.online). The desktop app and Clipy Local can
-be installed side by side.
+or in the [web app](https://clipy.online). The full Clipy app and Clipy Local can be installed side by side.
 
 ## Build it
 
