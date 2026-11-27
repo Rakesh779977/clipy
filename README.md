@@ -20,6 +20,10 @@
 	<a href="CONTRIBUTING.md">Contribute</a>
 	 |
 	<a href="https://clipy.online">Website</a>
+	 |
+	<a href="https://apps.apple.com/app/clipy-screen-recorder/id6836756677">iPhone &amp; iPad</a>
+	 |
+	<a href="https://play.google.com/store/apps/details?id=online.clipy.android">Android</a>
 </p>
 
 <p align="center">
@@ -173,16 +177,19 @@ agent the [agent-readable version](https://clipy.online/video/f8lshuommnk5.arec)
 | --- | --- |
 | Desktop app for macOS and Windows | [clipy.online/download](https://clipy.online/download), or build it from this repository (below) |
 | Chrome extension | [Chrome Web Store](https://chromewebstore.google.com/detail/clipy-screen-recorder-for/kpoeghpnpjdaglohmnemgkljahinendl) |
-| iPhone, iPad and Android | [clipy.online/download](https://clipy.online/download) |
+| iPhone and iPad | [App Store](https://apps.apple.com/app/clipy-screen-recorder/id6836756677) |
+| Android | [Google Play](https://play.google.com/store/apps/details?id=online.clipy.android) |
+| Web app | [clipy.online](https://clipy.online) |
 | Command line (macOS, Windows, Linux) | `npm i -g @clipy/cli` |
-| In the browser, nothing to install | [clipy.online](https://clipy.online) |
 
 The full product docs live at [clipy.online/docs](https://clipy.online/docs).
 
 ## Record with the Clipy app
 
-1. Download Clipy from [clipy.online/download](https://clipy.online/download)
+1. For desktop, download Clipy from [clipy.online/download](https://clipy.online/download)
    or add the [Chrome extension](https://chromewebstore.google.com/detail/clipy-screen-recorder-for/kpoeghpnpjdaglohmnemgkljahinendl).
+   On iPhone or iPad, get it from the [App Store](https://apps.apple.com/app/clipy-screen-recorder/id6836756677); on Android, use [Google Play](https://play.google.com/store/apps/details?id=online.clipy.android).
+   You can also use the [web app](https://clipy.online).
 2. Pick a tab, window or screen, and turn the camera and mic on or off.
 3. Record and talk. Draw on the page, or hold Control in the desktop app to
    highlight what you mean.
@@ -194,8 +201,8 @@ The full product docs live at [clipy.online/docs](https://clipy.online/docs).
 We build Clipy with the people who use it. Tell us how the Chrome extension,
 the iPhone and Android apps, the web app and the desktop app work for you.
 
-1. Get the [Chrome extension](https://chromewebstore.google.com/detail/clipy-screen-recorder-for/kpoeghpnpjdaglohmnemgkljahinendl), or the apps from
-   [clipy.online/download](https://clipy.online/download).
+1. Get the [Chrome extension](https://chromewebstore.google.com/detail/clipy-screen-recorder-for/kpoeghpnpjdaglohmnemgkljahinendl), the [iPhone and iPad app](https://apps.apple.com/app/clipy-screen-recorder/id6836756677), or the [Android app](https://play.google.com/store/apps/details?id=online.clipy.android).
+   You can also use the [web app](https://clipy.online) or download the [desktop app](https://clipy.online/download).
 2. Use it for something real: a bug report, a demo, a walkthrough for a
    teammate.
 3. When something does not work the way you expected, record it with Clipy
