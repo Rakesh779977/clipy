@@ -770,6 +770,19 @@ async function setHidden($: $, value: boolean): Promise<void> {
   await update($, hidden, () => value)
 }
 
+const STARTUP_REDRAWS_MS = [1_000, 3_000, 8_000, 20_000]
+
+async function redrawWhileStarting($: $): Promise<void> {
+  for (const wait of STARTUP_REDRAWS_MS) {
+    try {
+      await $.clock.sleep(wait)
+      $.ui.invalidate('ui.render')
+    } catch {
+      return
+    }
+  }
+}
+
 export const register: Register = (on, options) => {
   on('command.run', { command: COMMAND }, async $ => {
     const next = !(await read($, hidden))
@@ -818,6 +831,11 @@ export const register: Register = (on, options) => {
     } else if (s.phase !== 'idle') {
       await update($, recording, () => IDLE)
     }
+    // In a cloud session the plugin can load after the app first draws the area
+    // above the prompt, and nothing would draw the band until its state changed.
+    // Ask for a draw now, and a few times while the app's view attaches.
+    $.ui.invalidate('ui.render')
+    void redrawWhileStarting($)
     return started
   })
 

@@ -979,3 +979,20 @@ test('a screen that cannot be found falls back to the default one', async ($, on
   expect(await ui.find({ key: 'stop' })).toBeDefined()
   await ui.unmount()
 })
+
+test('starting a session asks for the band to be drawn, then again while the view attaches', async ($, on) => {
+  const { clock } = host(on, { version: '0.20.0' })
+  mock.store(on)
+  const redraws: string[] = []
+  on('ui.invalidate', (_, e) => {
+    redraws.push(String(e.event))
+    return { value: undefined }
+  })
+  on('command.register', (_, e) => ({ value: { command: e.name } }))
+  on('session.start', (_, e) => ({ cwd: e.cwd }))
+  await $.session.start({ cwd: '/', surface: 'desktop', isInteractive: true })
+  expect(redraws).toEqual(['ui.render'])
+  await clock.advance(32_000)
+  expect(redraws.length).toBe(5)
+  expect(redraws.every(r => r === 'ui.render')).toBe(true)
+})
