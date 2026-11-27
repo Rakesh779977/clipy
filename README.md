@@ -65,6 +65,10 @@ your machine, and a video file is transcribed on your machine. Claude answers
 with the timestamps behind each claim, so you can check them in seconds.
 Details in [plugins/watch](plugins/watch/README.md).
 
+Get Clipy on [iPhone and iPad](https://apps.apple.com/app/clipy-screen-recorder/id6836756677)
+or [Android](https://play.google.com/store/apps/details?id=online.clipy.android),
+or use the [web app](https://clipy.online).
+
 ### Show Claude your screen
 
 ```text
